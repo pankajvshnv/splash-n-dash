@@ -4,6 +4,7 @@ import { Hero } from './components/sections/Hero';
 import { Features } from './components/sections/Features';
 import { BeforeAfter } from './components/sections/BeforeAfter';
 import { Services } from './components/sections/Services';
+import { Pricing } from './components/sections/Pricing';
 import { About } from './components/sections/About';
 import { Gallery } from './components/sections/Gallery';
 import { Process } from './components/sections/Process';
@@ -19,6 +20,7 @@ export default function App() {
         <Features />
         <BeforeAfter />
         <Services />
+        <Pricing />
         <About />
         <Gallery />
         <Process />
