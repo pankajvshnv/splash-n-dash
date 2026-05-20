@@ -16,9 +16,9 @@ export function Navbar() {
 
   return (
     <>
-      <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-brand-blue py-4 shadow-lg' : 'bg-transparent py-6'}`}>
+      <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white py-4 shadow-lg' : 'bg-transparent py-6'}`}>
         <div className="container mx-auto px-6 flex items-center justify-between">
-          <div className={`text-lg sm:text-2xl font-display font-bold tracking-tighter flex items-center gap-2 sm:gap-3 text-white`}>
+          <div className={`text-lg sm:text-2xl font-display font-bold tracking-tighter flex items-center gap-2 sm:gap-3 ${scrolled ? 'text-brand-dark' : 'text-white'}`}>
             <div className="relative w-10 h-10 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center p-1 shadow-md border-2 border-brand-green/20 overflow-hidden shrink-0">
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9NXFeK9tjT5x-42nB1rQMxTAxwrG61st-Cw&s" alt="Splash N Dash Logo" className="w-full h-full object-contain" />
             </div>
@@ -27,19 +27,19 @@ export function Navbar() {
           
           <nav className="hidden md:flex items-center gap-8">
             {links.map((link) => (
-              <a key={link} href={`#${link.toLowerCase()}`} className={`text-sm font-medium ${scrolled ? 'text-white/90 hover:text-white' : 'text-white/90 hover:text-white'} transition-colors`}>
+              <a key={link} href={`#${link.toLowerCase()}`} className={`text-sm font-medium ${scrolled ? 'text-gray-600 hover:text-brand-blue' : 'text-white/90 hover:text-white'} transition-colors`}>
                 {link}
               </a>
             ))}
           </nav>
           
           <div className="hidden md:flex">
-            <button className={`${scrolled ? 'bg-white text-brand-blue hover:bg-gray-100' : 'bg-white/20 backdrop-blur-md text-white border border-white/30 hover:bg-white hover:text-brand-dark'} px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 shadow-[0_0_15px_rgba(14,165,233,0.2)]`}>
+            <button className={`${scrolled ? 'bg-brand-blue text-white hover:bg-brand-blue/90' : 'bg-white/20 backdrop-blur-md text-white border border-white/30 hover:bg-white hover:text-brand-dark'} px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 shadow-[0_0_15px_rgba(14,165,233,0.2)]`}>
               Book Appointment
             </button>
           </div>
 
-          <button className={`md:hidden text-white`} onClick={() => setIsOpen(true)}>
+          <button className={`md:hidden ${scrolled ? 'text-brand-dark' : 'text-white'}`} onClick={() => setIsOpen(true)}>
             <Menu size={28} />
           </button>
         </div>
