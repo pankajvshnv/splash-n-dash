@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+
+  --color-brand-light: #f8fafc;
+  --color-brand-surface: #ffffff;
+  --color-brand-dark: #193385; /* Dark Blue from Logo */
+  --color-brand-blue: #28a3dc; /* Cyan from Logo */
+  --color-brand-blue-dark: #21398c; /* Dark Blue from Logo for solid elements */
+  --color-brand-green: #a2cc3a; /* Lime green from swoosh */
+
+  --background-image-glow: radial-gradient(circle at center, rgba(40, 163, 220, 0.15) 0%, transparent 70%);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-brand-light text-brand-dark font-sans antialiased overflow-x-hidden selection:bg-brand-blue selection:text-white;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-gray-200/50 shadow-sm;
+  }
+  .glass-dark {
+    @apply bg-white/90 backdrop-blur-xl border border-gray-200 shadow-md;
+  }
+  .text-glow {
+    text-shadow: 0 0 20px rgba(40, 163, 220, 0.5);
+  }
+  .box-glow {
+    box-shadow: 0 0 30px rgba(40, 163, 220, 0.2);
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-dark to-gray-500;
+  }
+  .text-gradient-blue {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-blue to-brand-blue-dark;
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

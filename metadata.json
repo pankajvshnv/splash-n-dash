@@ -1,0 +1,6 @@
+{
+  "name": "Splash N Dash JC",
+  "description": "A premium, modern, high-converting website for a luxury car wash & detailing brand. Features cinematic visuals, smooth scroll, glassmorphism, before/after comparisons, and a luxury automotive aesthetic.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
