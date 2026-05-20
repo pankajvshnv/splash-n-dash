@@ -43,8 +43,9 @@ export function BeforeAfter() {
         transition={{ duration: 1 }}
         className="w-full relative group shadow-[0_0_100px_rgba(14,165,233,0.1)] z-20"
       >
-        <div className="w-full max-w-[1920px] mx-auto relative h-[45vh] sm:h-[60vh] md:h-[80vh] touch-pan-y">
+        <div className="w-full max-w-[1920px] mx-auto relative h-[45vh] sm:h-[60vh] md:h-[80vh]">
           <ReactCompareSlider
+            style={{ touchAction: 'none' }}
             handle={
               <div className="flex h-full w-1 items-center justify-center bg-white/20 relative shadow-[0_0_20px_rgba(14,165,233,0.6)] backdrop-blur-sm">
                 <div className="absolute w-12 h-12 md:w-14 md:h-14 bg-black/80 backdrop-blur-xl border border-brand-blue/50 rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(14,165,233,0.8)] z-20 group-hover:scale-110 transition-transform">
