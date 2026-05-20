@@ -19,9 +19,9 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-white/50 text-white text-sm font-medium mb-8 shadow-sm"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-blue border border-brand-blue text-white text-sm font-medium mb-8 shadow-sm"
         >
-          <span className="w-2 h-2 rounded-full bg-brand-blue animate-pulse" />
+          <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
           Premium High-End Detailing Studio
         </motion.div>
 

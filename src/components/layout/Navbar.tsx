@@ -18,11 +18,11 @@ export function Navbar() {
     <>
       <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'glass-dark py-4' : 'bg-transparent py-6'}`}>
         <div className="container mx-auto px-6 flex items-center justify-between">
-          <div className={`text-2xl font-display font-bold tracking-tighter flex items-center gap-3 ${scrolled ? 'text-brand-dark' : 'text-white'}`}>
-            <div className="relative w-14 h-14 bg-white rounded-full flex items-center justify-center p-1 shadow-md border-2 border-brand-green/20 overflow-hidden">
+          <div className={`text-xl sm:text-2xl font-display font-bold tracking-tighter flex items-center gap-2 sm:gap-3 ${scrolled ? 'text-brand-dark' : 'text-white'}`}>
+            <div className="relative w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-full flex items-center justify-center p-1 shadow-md border-2 border-brand-green/20 overflow-hidden shrink-0">
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9NXFeK9tjT5x-42nB1rQMxTAxwrG61st-Cw&s" alt="Splash N Dash Logo" className="w-full h-full object-contain" />
             </div>
-            <span className="hidden sm:inline">SPLASH <span className="text-brand-blue">N</span> DASH</span>
+            <span className="inline">SPLASH <span className="text-brand-blue">N</span> DASH</span>
           </div>
           
           <nav className="hidden md:flex items-center gap-8">
