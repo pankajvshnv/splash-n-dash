@@ -43,16 +43,16 @@ export function BeforeAfter() {
         transition={{ duration: 1 }}
         className="w-full relative group shadow-[0_0_100px_rgba(14,165,233,0.1)] z-20"
       >
-        <div className="w-full max-w-[1920px] mx-auto relative h-[45vh] sm:h-[60vh] md:h-[80vh]">
+        <div className="w-full max-w-[1920px] mx-auto relative h-[45vh] sm:h-[60vh] md:h-[80vh] touch-none select-none">
           <ReactCompareSlider
-            style={{ touchAction: 'none' }}
+            className="w-full h-full object-cover rounded-none md:rounded-3xl"
             handle={
-              <div className="flex h-full w-1 items-center justify-center bg-white/20 relative shadow-[0_0_20px_rgba(14,165,233,0.6)] backdrop-blur-sm">
-                <div className="absolute w-12 h-12 md:w-14 md:h-14 bg-black/80 backdrop-blur-xl border border-brand-blue/50 rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(14,165,233,0.8)] z-20 group-hover:scale-110 transition-transform">
-                  <div className="w-1 h-5 md:h-6 bg-white/80 rounded-full mx-0.5" />
-                  <div className="w-1 h-5 md:h-6 bg-white/80 rounded-full mx-0.5" />
-                </div>
-              </div>
+               <div className="flex flex-col h-full w-1 items-center justify-center bg-white/50 relative shadow-[0_0_10px_rgba(0,0,0,0.5)]">
+                 <div className="w-12 h-12 bg-black/70 backdrop-blur-md rounded-full flex items-center justify-center border-2 border-white/80 shadow-lg cursor-ew-resize">
+                   <div className="w-1 h-4 bg-white rounded-full mx-0.5" />
+                   <div className="w-1 h-4 bg-white rounded-full mx-0.5" />
+                 </div>
+               </div>
             }
             itemOne={
               <ReactCompareSliderImage 
@@ -68,7 +68,6 @@ export function BeforeAfter() {
                 className="w-full h-full object-cover"
               />
             }
-            className="w-full h-full object-cover rounded-none md:rounded-3xl"
           />
           <div className="absolute top-4 left-4 md:top-8 md:left-8 px-4 py-1.5 md:px-6 md:py-2 bg-black/60 backdrop-blur-md text-white/80 text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] rounded-full pointer-events-none border border-white/10">
             Before
