@@ -43,16 +43,16 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-brand-blue shrink-0 mt-0.5" />
                 <a href="https://maps.app.goo.gl/5z4YECaTAnmVxKJN7" target="_blank" rel="noreferrer" className="hover:text-brand-blue transition-colors">
-                  Jersey City, NJ<br/>(Click for directions)
+                  157 St Pauls Ave,<br/>Jersey City, NJ 07306
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-brand-blue shrink-0" />
-                <a href="#" className="hover:text-brand-blue transition-colors">+1 (555) 123-4567</a>
+                <a href="tel:+15512253227" className="hover:text-brand-blue transition-colors">+1 551-225-3227</a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-brand-blue shrink-0" />
-                <a href="#" className="hover:text-brand-blue transition-colors">info@splashndashjc.com</a>
+                <a href="mailto:info@splashndashjc.com" className="hover:text-brand-blue transition-colors">info@splashndashjc.com</a>
               </li>
             </ul>
           </div>
@@ -61,9 +61,13 @@ export function Footer() {
           <div>
             <h4 className="text-white font-bold mb-6 tracking-wider uppercase text-sm">Hours</h4>
             <ul className="space-y-2 text-sm text-white/70 font-medium">
-              <li className="flex justify-between"><span>Mon - Fri:</span> <span>8:00 AM - 6:00 PM</span></li>
-              <li className="flex justify-between"><span>Saturday:</span> <span>9:00 AM - 5:00 PM</span></li>
-              <li className="flex justify-between text-brand-blue"><span>Sunday:</span> <span>Closed</span></li>
+              <li className="flex justify-between text-brand-blue"><span>Monday:</span> <span>Closed</span></li>
+              <li className="flex justify-between"><span>Tuesday:</span> <span>9:00 AM - 6:00 PM</span></li>
+              <li className="flex justify-between"><span>Wednesday:</span> <span>9:00 AM - 6:00 PM</span></li>
+              <li className="flex justify-between"><span>Thursday:</span> <span>9:00 AM - 6:00 PM</span></li>
+              <li className="flex justify-between"><span>Friday:</span> <span>9:00 AM - 6:00 PM</span></li>
+              <li className="flex justify-between"><span>Saturday:</span> <span>9:00 AM - 6:00 PM</span></li>
+              <li className="flex justify-between"><span>Sunday:</span> <span>9:00 AM - 6:00 PM</span></li>
             </ul>
           </div>
 
