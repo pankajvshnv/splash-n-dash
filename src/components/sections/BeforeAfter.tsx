@@ -86,7 +86,7 @@ export function BeforeAfter() {
           ref={containerRef}
           onPointerDown={handlePointerDown}
           onTouchMove={handleTouchMove}
-          className="w-full max-w-[1920px] mx-auto relative h-[45vh] sm:h-[60vh] md:h-[80vh] touch-none select-none cursor-ew-resize overflow-hidden md:rounded-3xl"
+          className="w-full max-w-[1920px] mx-auto relative aspect-[4/3] sm:aspect-video md:aspect-auto md:h-[80vh] touch-none select-none cursor-ew-resize overflow-hidden md:rounded-3xl"
         >
           {/* After Image (Background) */}
           <img 
